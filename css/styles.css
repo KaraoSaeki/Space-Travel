@@ -1,3 +1,81 @@
 body{
     background-image: url('../img/Tourisme-spatial-scaled.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row;
+    list-style: none;
+}
+
+a{
+    color: white;
+    font-family: Lobster, cursive;
+    text-decoration: none;
+    font-size:x-large;
+    padding:10px;
+    border-radius: 15px;
+}
+
+a:hover{
+    color:black;
+    background-color: white;
+    text-decoration: underline;
+    transition: 1s;
+}
+
+/* Content */
+.name{
+    position: absolute;
+    top:15%; 
+    left:40%;
+    right:30%;
+    font-size: 40px;
+}
+
+h1{
+    font-family: Lobster, cursive;
+    text-shadow: 0px 0px 10px white;
+}
+
+.desc{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    right: 35%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.desc p{
+    font-family: Lobster, cursive;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* Footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    color:white;
+    font-family: Lobster, cursive;
 }
