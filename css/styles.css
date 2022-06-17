@@ -1,9 +1,11 @@
 body{
     background-image: url('../img/Tourisme-spatial-scaled.jpeg');
     background-repeat: no-repeat;
-    background-size: cover;
+    height: auto;
+    width: auto;
     display: flex;
-    justify-content: center;
+    padding-bottom: 50px;
+    flex-flow: column;
 }
 
 /* Header */
@@ -53,22 +55,30 @@ h1{
 }
 
 .desc_index{
-    position: absolute;
-    top: 45%;
-    left: 35%;
-    right: 35%;
+    margin-top: 10%;
     text-align: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    width: auto;
     color: white;
     font-family: Lobster, cursive;
     font-size: x-large;
+}
+
+.desc_index p{
     background-color: rgba(0,0,0,0.8);
+    padding:15px;
 }
 
 /* Content */
-.name{
-    position: absolute;
-    top:5%;
+.title{
     font-size: 40px;
+    margin-top: 5%;
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
 }
 
 h1{
@@ -77,27 +87,38 @@ h1{
 }
 
 .desc{
-    position: absolute;
-    top: 25%;
-    left: 35%;
-    right: 35%;
     text-align: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    width: auto;
     color: white;
-    background-color: rgba(0,0,0,0.5);
 }
 
 .desc p{
+    background-color: rgba(0,0,0,0.5);
     font-family: Lobster, cursive;
     font-size: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding:15px;
 }
 
 .container{
-    margin-top: 15%;
+    margin-top: 1%;
     display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
+    flex-flow: column;
+    align-items: center;
+    height: auto;
+}
+
+/* Destination */
+.ss_container_flex{
+    width: min-content;
+    border: 5px white solid;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    flex-flow: column;
+    margin:15px;
 }
 
 /* Vaisseaux */
@@ -121,14 +142,6 @@ h1{
     width: 40%;
     height: 40%;
     background-color: rgba(0,0,0,0.8);
-}
-
-/* Destination */
-.ss_container_flex{
-    border: 5px white solid;
-    border-radius: 20px;
-    background-color: rgba(0,0,0,0.8);
-    margin:15px;
 }
 
 .div_name{
@@ -158,15 +171,15 @@ h1{
 
 @media screen and (min-width: 1500px) {
     .div_img img{
-        width: 250px;
-        height: 225px;
+        width: 350px;
+        height: 325px;
     }
 }
 
 @media screen and (max-width: 1500px) and (min-width: 1100px) {
     .div_img img{
-        width: 150px;
-        height: 125px;
+        width: 250px;
+        height: 225px;
     }
 }
 
